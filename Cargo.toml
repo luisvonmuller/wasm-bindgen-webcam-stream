@@ -1,0 +1,29 @@
+[package]
+name = "webcam-strem-on-dom"
+version = "0.0.1"
+authors = ["@luisvonmuller <luis@vonmuller>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+js-sys = "0.3.42"
+wasm-bindgen = "0.2.65"
+wasm-bindgen-futures = "0.4.15"
+ 
+[dependencies.web-sys]
+version = "0.3.4"
+features = [
+  'console',
+  'Document',
+  'Element',
+  'Window',
+  'VideoTrack',
+  'HtmlVideoElement',
+  'Navigator',
+  'MediaStream',
+  'MediaStreamConstraints',
+  'Permissions',
+  'MediaDevices',
+]
